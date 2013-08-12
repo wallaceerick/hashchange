@@ -1,0 +1,129 @@
+body {
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+
+.hashchange {
+    width: 800px;
+    height: auto;
+    padding: 20px 0 300px 0;
+    background: #ccc;
+    margin: 0 auto;
+}
+.hashchange ul#nav {
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+    list-style: none;
+}
+.hashchange ul#nav li {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.hashchange ul#nav li a {
+    color: #777;
+    border: 2px solid #777;
+    background-color: #ccc;
+    padding: 0.2em 0.6em;
+    text-decoration: none; 
+}
+.hashchange ul#nav li a:hover {
+    color: #999;
+    border-color: #999;
+    background: #eee; 
+}
+.hashchange ul#nav li a.selected,
+.hashchange ul#nav li .selected:hover {
+    color: #0a0;
+    border-color: #0a0;
+    background: #afa; 
+}
+
+.hide {
+    display: none;
+}
+.page {
+    width: 80%; 
+    margin: 20px auto;
+    border: 2px solid #000;
+    clear: both;
+    position: relative;
+}
+.page h1 {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.bbq {
+  margin-bottom: 1em;
+}
+
+.bbq-content {
+  border-left: 1px solid #913D00;
+  border-right: 1px solid #913D00;
+  padding: 8px;
+  margin: 0;
+  float: left;
+  width: 682px;
+  height: 302px;
+}
+
+.bbq-item h1 {
+  margin: 0;
+  font-size: 180%;
+}
+
+.bbq-item p {
+  font-size: 150%;
+  margin: 5px 0 0;
+}
+
+.bbq-item img {
+  border: 1px solid #913D00;
+  float: right;
+  margin-left: 10px;
+}
+
+a.bbq-current {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bbq-nav {
+  padding: 0.3em;
+  color: #C4884F;
+  border: 1px solid #C4884F;
+  background: #FFD6AF;
+  clear: both;
+  text-align: center;
+}
+
+.bbq-nav-top {
+  margin-bottom: 0;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+}
+
+.bbq-nav-bottom {
+  margin-top: 0;
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+}
+
+#page {
+  width: 700px;
+}
