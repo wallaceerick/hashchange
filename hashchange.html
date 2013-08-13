@@ -10,10 +10,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.hashchange.js"></script>
     <script>
-        $(function(){
-
-
-
+        $(function(){ 
             $(window).hashchange( function(){
                 var hash = location.hash;
                 //console.log(hash);
@@ -28,7 +25,7 @@
                 function reset(){
                     //All Pages
                     $('.page').hide();
-                    $('.page h1').animate({
+                    $('.page h2').animate({
                         opacity: 0, 
                         marginLeft: '0'
                     }, 500);
@@ -43,7 +40,7 @@
                     console.log('É a home!');
                     reset();
                     $('.home').fadeIn(300);
-                    $('.home h1').animate({
+                    $('.home h2').animate({
                         opacity: 1, 
                         marginLeft: '120px'
                     }, 500);
@@ -56,7 +53,7 @@
                     console.log('É a página About!');
                     reset();
                     $('.about').fadeIn(300);
-                    $('.about h1').animate({
+                    $('.about h2').animate({
                         opacity: 1, 
                         marginLeft: '120px'
                     }, 500);
@@ -69,7 +66,7 @@
                     console.log('É a página Services!');
                     reset();
                     $('.services').fadeIn(300);
-                    $('.services h1').animate({
+                    $('.services h2').animate({
                         opacity: 1, 
                         marginLeft: '120px'
                     }, 500);
@@ -82,7 +79,7 @@
                     console.log('É a página Contact!');
                     reset();
                     $('.contact').fadeIn(300);
-                    $('.contact h1').animate({
+                    $('.contact h2').animate({
                         opacity: 1, 
                         marginLeft: '120px'
                     }, 500);
@@ -95,7 +92,7 @@
                     console.log('É a página Contact/Teste!');
                     reset();
                     $('.test').fadeIn(300);
-                    $('.test h1').animate({
+                    $('.test h2').animate({
                         opacity: 1, 
                         marginLeft: '120px'
                     }, 500);
@@ -129,27 +126,27 @@
     
         <div id="content">
             <div class="page hide home">
-                <h1>Home</h1>
+                <h2>Home</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, perspiciatis, error porro possimus ut libero voluptate quod maxime suscipit minus aperiam dolore voluptates unde reiciendis laudantium quidem expedita fugiat nam!</p>
             </div>
 
             <div class="page hide about">
-                <h1>About</h1>
+                <h2>About</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, perspiciatis, error porro possimus ut libero voluptate quod maxime suscipit minus aperiam dolore voluptates unde reiciendis laudantium quidem expedita fugiat nam!</p>
             </div>
 
             <div class="page hide services">
-                <h1>Services</h1>
+                <h2>Services</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, perspiciatis, error porro possimus ut libero voluptate quod maxime suscipit minus aperiam dolore voluptates unde reiciendis laudantium quidem expedita fugiat nam!</p>
             </div>
 
             <div class="page hide contact">
-                <h1>Contact</h1>
+                <h2>Contact</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, perspiciatis, error porro possimus ut libero voluptate quod maxime suscipit minus aperiam dolore voluptates unde reiciendis laudantium quidem expedita fugiat nam!</p>
             </div>
 
             <div class="page hide test">
-                <h1>Teste</h1>
+                <h2>Teste</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, perspiciatis, error porro possimus ut libero voluptate quod maxime suscipit minus aperiam dolore voluptates unde reiciendis laudantium quidem expedita fugiat nam!</p>
             </div>
         </div>

@@ -10,14 +10,14 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.hashchange.js"></script>
     <script src="js/jquery.back.button.js"></script>
+
     <script>
-        
-        $(function(){
+    $(function(){
   
   // Keep a mapping of url-to-container for caching purposes.
   var cache = {
     // If url is '' (no fragment), display this div's content.
-    '': $('.bbq-default')
+    '': $('.home')
   };
   
   // Bind an event to window.onhashchange that, when the history state changes,
@@ -30,13 +30,13 @@
     var url = $.param.fragment();
     
     // Remove .bbq-current class from any previously "current" link(s).
-    $( 'a.bbq-current' ).removeClass( 'bbq-current' );
+    $('a.selected').removeClass('selected');
     
     // Hide any visible ajax content.
-    $( '.bbq-content' ).children( ':visible' ).hide();
+    $( '#content' ).children( ':visible' ).hide();
     
     // Add .bbq-current class to "current" nav link(s), only if url isn't empty.
-    url && $( 'a[href="#' + url + '"]' ).addClass( 'bbq-current' );
+    url && $( 'a[href="#' + url + '"]' ).addClass( 'selected' );
     
     if ( cache[ url ] ) {
       // Since the element is already in the cache, it doesn't need to be
@@ -45,21 +45,21 @@
       
     } else {
       // Show "loading" content while AJAX content loads.
-      $( '.bbq-loading' ).show();
+      $( '.loading' ).show();
       
       // Create container for this url's content and store a reference to it in
       // the cache.
-      cache[ url ] = $( '<div class="bbq-item"/>' )
+      cache[ url ] = $( '<div class="page"/>' )
         
         // Append the content container to the parent container.
-        .appendTo( '.bbq-content' )
+        .appendTo( '#content' )
         
         // Load external content via AJAX. Note that in order to keep this
         // example streamlined, only the content in .infobox is shown. You'll
         // want to change this based on your needs.
         .load( url, function(){
           // Content loaded, hide "loading" content.
-          $( '.bbq-loading' ).hide();
+          $( '.loading' ).hide();
         });
     }
   })
@@ -75,36 +75,31 @@
 </head>
 
 <body>
-    
-<div class="bbq">
-  <div class="bbq-nav bbq-nav-top">
-    <a href="#pages/burger.html">Burgers</a> |
-    <a href="#pages/chicken.html">Chicken</a> |
-    <a href="#pages/kebabs.html">Kebabs</a> |
-    <a href="#pages/kielbasa.html">Kielbasa</a> |
-    <a href="#pages/ribs.html">Ribs</a> |
-    <a href="#pages/steak.html">Steak</a>
-  </div>
-  
-  <div class="bbq-content">
-    
-    <!-- This will be shown while loading AJAX content. You'll want to get an image that suits your design at http://ajaxload.info/ -->
-    <div class="bbq-loading" style="display:none;">
-      <img src="/shell/images/ajaxload-15-white.gif" alt="Loading"/> Loading content...
+
+    <div class="hashchange">
+        <ul id="nav">
+            <li><a href="#pages/burger.html">Burgers</a></li>
+            <li><a href="#pages/chicken.html">Chicken</a></li>
+            <li><a href="#pages/kebabs.html">Kebabs</a></li>
+            <li><a href="#pages/kielbasa.html">Kielbasa</a></li>
+            <li><a href="#pages/ribs.html">Ribs</a></li>
+            <li><a href="#pages/steak.html">Steak</a></li>
+        </ul>
+
+        <div id="content">
+            <div class="loading" style="display:none;">
+                <img src="images/loading.gif" alt="Loading" />
+            </div>
+
+            <div class="home page">
+                <img src="images/bbq.jpg" width="400" height="300">
+                <h1>jQuery BBQ</h1>
+                <p>Click a nav item above or below to load some delicious AJAX content! Also, once the content loads, feel free to further explore our savory delights by clicking any inline links you might see.</p>
+            </div>
+            
+        </div>
+
     </div>
-    
-    <!-- This content will be shown if no path is specified in the URL fragment. -->
-    <div class="bbq-default bbq-item">
-      <img src="bbq.jpg" width="400" height="300">
-      <h1>jQuery BBQ</h1>
-      <p>Click a nav item above or below to load some delicious AJAX content! Also,
-        once the content loads, feel free to further explore our savory delights by
-        clicking any inline links you might see.</p>
-    </div>
-    
-  </div>
- 
-</div>
 
 </body>
 </html> 
