@@ -27,8 +27,8 @@
     
     // Get the hash (fragment) as a string, with any leading # removed. Note that
     // in jQuery 1.4, you should use e.fragment instead of $.param.fragment().
-    var url = $.param.fragment();
-    
+    var url = '!' + $.param.fragment();
+    console.log(url);
     // Remove .bbq-current class from any previously "current" link(s).
     $('a.selected').removeClass('selected');
     
@@ -49,7 +49,7 @@
       
       // Create container for this url's content and store a reference to it in
       // the cache.
-      cache[ url ] = $( '<div class="page"/>' )
+      cache[url] = $( '<div class="page"/>' )
         
         // Append the content container to the parent container.
         .appendTo( '#content' )
