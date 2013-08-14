@@ -1,15 +1,18 @@
 $(function(){ 
-    
+
     $(window).hashchange( function(){
         var hash = location.hash;
 
         //Change the Title
-        document.title = 'Hashchange | The current hash is ' + ( hash.replace( /^#/, '' ) || 'blank' ) + '.';
+        document.title = 'Hashchange | The current hash is ' + (hash.replace( /^#!/, '') || 'blank') + '.';
 
         //Bind Link's
         $('#nav li a').each(function(){
             var that = $(this);
-            that[that.attr( 'href' ) === hash ? 'addClass' : 'removeClass' ]( 'selected' );
+            that[that.attr('href') === hash ? 'addClass' : 'removeClass']('selected');
+            if(hash == ""){
+                $('#nav li a[href="#!home"]').addClass('selected');
+            }
             if(hash == "#!blog/post"){
                 $('#nav li a[href="#!blog"]').addClass('selected');
             }
