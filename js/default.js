@@ -10,6 +10,9 @@ $(function(){
         $('#nav li a').each(function(){
             var that = $(this);
             that[that.attr( 'href' ) === hash ? 'addClass' : 'removeClass' ]( 'selected' );
+            if(hash == "#!blog/post"){
+                $('#nav li a[href="#!blog"]').addClass('selected');
+            }
         });
 
         function reset(){
@@ -28,67 +31,37 @@ $(function(){
         /* Home */
         if(hash == "#!home"){
             reset();
-            $('.home').fadeIn(300);
-            $('.home h2').animate({
-                opacity: 1, 
-                marginLeft: '120px'
-            }, 500);
-            $('.home p').animate({
-                opacity: 1, 
-                marginLeft: '120px'
-            }, 700);
+            $('.home, .home h1').fadeIn(300);
         } 
         /* About */
         else if(hash == "#!about"){
             reset();
-            $('.about').fadeIn(300);
-            $('.about h2').animate({
-                opacity: 1, 
-                marginLeft: '120px'
-            }, 500);
-            $('.about p').animate({
-                opacity: 1, 
-                marginLeft: '120px'
-            }, 700);
+            $('.about, .about h1').fadeIn(300);
+        }
+        /* Portfolio */
+        else if(hash == "#!portfolio"){
+            reset();
+            $('.portfolio, .portfolio h1').fadeIn(300);
         }
         /* Services */
         else if(hash == "#!services"){
             reset();
-            $('.services').fadeIn(300);
-            $('.services h2').animate({
-                opacity: 1, 
-                marginLeft: '120px'
-            }, 500);
-            $('.services p').animate({
-                opacity: 1, 
-                marginLeft: '120px'
-            }, 700);
+            $('.services, .services h1').fadeIn(300);
+        }
+        /* Blog */
+        else if(hash == "#!blog"){
+            reset();
+            $('.blog, .blog h1').fadeIn(300);
         }
         /* Contact */
         else if(hash == "#!contact"){
             reset();
-            $('.contact').fadeIn(300);
-            $('.contact h2').animate({
-                opacity: 1, 
-                marginLeft: '120px'
-            }, 500);
-            $('.contact p').animate({
-                opacity: 1, 
-                marginLeft: '120px'
-            }, 700);
+            $('.contact, .contact h1').fadeIn(300);
         }
-        /* Contact/Test */
-        else if(hash == "#!contact/test"){
+        /* Blog/Post */
+        else if(hash == "#!blog/post"){
             reset();
-            $('.test').fadeIn(300);
-            $('.test h2').animate({
-                opacity: 1, 
-                marginLeft: '120px'
-            }, 500);
-            $('.test p').animate({
-                opacity: 1, 
-                marginLeft: '120px'
-            }, 700);
+            $('.post, .post h1').fadeIn(300);
         }
 
     });
