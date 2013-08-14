@@ -10,10 +10,12 @@ $(function(){
         $('#nav li a').each(function(){
             var that = $(this);
             that[that.attr('href') === hash ? 'addClass' : 'removeClass']('selected');
+            //Add selected class to Home
             if(hash == ""){
                 $('#nav li a[href="#!home"]').addClass('selected');
             }
-            if(hash == "#!blog/post"){
+            //Add selected class to Blog, when is a post!
+            if(hash == "#!blog/post-1" || hash == "#!blog/post-2"){
                 $('#nav li a[href="#!blog"]').addClass('selected');
             }
         });
@@ -61,11 +63,17 @@ $(function(){
             reset();
             $('.contact, .contact h1').fadeIn(300);
         }
-        /* Blog/Post */
-        else if(hash == "#!blog/post"){
-            reset();
-            $('.post, .post h1').fadeIn(300);
-        }
+
+            /* Blog/Post 1 */
+            else if(hash == "#!blog/post-1"){
+                reset();
+                $('.post-1, .post-1 h1').fadeIn(300);
+            } 
+            /* Blog/Post 2 */
+            else if(hash == "#!blog/post-2"){
+                reset();
+                $('.post-2, .post-2 h1').fadeIn(300);
+            }
 
     });
 

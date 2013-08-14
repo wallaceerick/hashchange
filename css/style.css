@@ -81,15 +81,17 @@ ul#nav li .selected:hover {
     font-weight: normal;
     color: #b5c2ca;
     font-size: 100px;
-    line-height: 400px;
+    padding: 120px 0 40px 0;
 } 
-.page a {
-    position: absolute;
-    bottom: 100px;
-    left: 45%;
+.page a { 
     line-height: 20px;
     text-decoration: none;
-    color: #4eaf6d;
+    color: #2397cd;
+    display: inline-block; 
+    margin: 0 30px;
+}
+.page a:hover {
+    text-decoration: underline;
 }
 
 
