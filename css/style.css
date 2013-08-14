@@ -68,7 +68,7 @@ ul#nav li .selected:hover {
 #content {
     width: 90%;
     height: auto;
-    min-height: 500px;
+    min-height: 300px;
     clear: both;
     position: relative;
     margin: 0 auto;
@@ -78,22 +78,38 @@ ul#nav li .selected:hover {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .page {  
-    text-align: center;
-    height: 400px;
+    height: 300px;
 }
 .page h1.title { 
+    text-align: center;
     text-transform: uppercase;
     font-weight: normal;
     color: #b5c2ca;
     font-size: 100px;
-    padding: 120px 0 40px 0;
+    padding: 80px 0 40px 0;
 } 
+.page h2 {  
+    font-weight: normal;
+    color: #2397cd;
+    font-size: 30px; 
+}
+.page p {  
+    padding-top: 15px;
+    color: #b5c2ca;
+    line-height: 30px;
+} 
+.page img {
+    float: right;
+    border: 3px solid #b5c2ca;
+    border-radius: 5px;
+    margin: 0 0 20px 40px;
+}
 .page a { 
-    line-height: 20px;
+    line-height: 20px; 
     text-decoration: none;
     color: #2397cd;
     display: inline-block; 
-    margin: 0 30px;
+    margin: 0 30px 0 90px;
 }
 
 
