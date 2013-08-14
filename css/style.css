@@ -54,7 +54,9 @@ body {
 .page h2 {
     opacity: 0;
 }
-
+.loading {
+  display: none;
+}
 
 
 
