@@ -10,113 +10,14 @@
    
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.hashchange.js"></script>
-    <script>
-        $(function(){ 
-            $(window).hashchange( function(){
-                var hash = location.hash;
-                //console.log(hash);
-
-                document.title = 'The hash is ' + ( hash.replace( /^#/, '' ) || 'blank' ) + '.';
-
-                $('#nav li a').each(function(){
-                    var that = $(this);
-                    that[that.attr( 'href' ) === hash ? 'addClass' : 'removeClass' ]( 'selected' );
-                });
-
-                function reset(){
-                    //All Pages
-                    $('.page').hide();
-                    $('.page h2').animate({
-                        opacity: 0, 
-                        marginLeft: '0'
-                    }, 500);
-                    $('.page p').animate({
-                        opacity: 0, 
-                        marginLeft: '0'
-                    }, 700);
-                }
-
-
-                if(hash == "#!home"){
-                    console.log('É a home!');
-                    reset();
-                    $('.home').fadeIn(300);
-                    $('.home h2').animate({
-                        opacity: 1, 
-                        marginLeft: '120px'
-                    }, 500);
-                    $('.home p').animate({
-                        opacity: 1, 
-                        marginLeft: '120px'
-                    }, 700);
-                } 
-                else if(hash == "#!about"){
-                    console.log('É a página About!');
-                    reset();
-                    $('.about').fadeIn(300);
-                    $('.about h2').animate({
-                        opacity: 1, 
-                        marginLeft: '120px'
-                    }, 500);
-                    $('.about p').animate({
-                        opacity: 1, 
-                        marginLeft: '120px'
-                    }, 700);
-                } 
-                else if(hash == "#!services"){
-                    console.log('É a página Services!');
-                    reset();
-                    $('.services').fadeIn(300);
-                    $('.services h2').animate({
-                        opacity: 1, 
-                        marginLeft: '120px'
-                    }, 500);
-                    $('.services p').animate({
-                        opacity: 1, 
-                        marginLeft: '120px'
-                    }, 700);
-                } 
-                else if(hash == "#!contact"){
-                    console.log('É a página Contact!');
-                    reset();
-                    $('.contact').fadeIn(300);
-                    $('.contact h2').animate({
-                        opacity: 1, 
-                        marginLeft: '120px'
-                    }, 500);
-                    $('.contact p').animate({
-                        opacity: 1, 
-                        marginLeft: '120px'
-                    }, 700);
-                } 
-                else if(hash == "#!contact/test"){
-                    console.log('É a página Contact/Teste!');
-                    reset();
-                    $('.test').fadeIn(300);
-                    $('.test h2').animate({
-                        opacity: 1, 
-                        marginLeft: '120px'
-                    }, 500);
-                    $('.test p').animate({
-                        opacity: 1, 
-                        marginLeft: '120px'
-                    }, 700);
-                }
-
-
-
-            });
-
-            $(window).hashchange();
-          
-        });
-    </script>
+    <script src="js/default.js"></script>
 
 </head>
 
 <body>
     
     <div class="hashchange">
+        
         <ul id="nav">
             <li><a href="#!home">Home</a></li>
             <li><a href="#!about">About</a></li>
