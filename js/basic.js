@@ -19,7 +19,7 @@ $(function(){
             cache[ url ].show();
         }
         else {
-            $( '.loading' ).show();
+            $('.loading').show();
             cache[url] = $('<div class="page"/>').appendTo('#content').load(url, function(){
                 $('.loading').hide();
             });

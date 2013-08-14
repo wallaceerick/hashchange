@@ -15,17 +15,32 @@
 		<priority>0.8</priority>
 	</url>
 	<url>
+		<loc>http://wallaceerick.com.br/hashchange/#!portfolio</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
 		<loc>http://wallaceerick.com.br/hashchange/#!services</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://wallaceerick.com.br/hashchange/#!contact</loc>
+		<loc>http://wallaceerick.com.br/hashchange/#!blog</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://wallaceerick.com.br/hashchange/#!contact/test</loc>
+		<loc>http://wallaceerick.com.br/hashchange/#!blog/post-1</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>http://wallaceerick.com.br/hashchange/#!blog/post-2</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>http://wallaceerick.com.br/hashchange/#!contact</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
