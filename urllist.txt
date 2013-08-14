@@ -1,0 +1,13 @@
+http://wallaceerick.com.br/hashchange/
+http://wallaceerick.com.br/hashchange/#!home
+http://wallaceerick.com.br/hashchange/#!about
+http://wallaceerick.com.br/hashchange/#!services
+http://wallaceerick.com.br/hashchange/#!contact
+http://wallaceerick.com.br/hashchange/#!contact/test
+http://wallaceerick.com.br/hashchange/basic.html
+http://wallaceerick.com.br/hashchange/basic.html#pages/burger.html
+http://wallaceerick.com.br/hashchange/basic.html#pages/chicken.html
+http://wallaceerick.com.br/hashchange/basic.html#pages/kebabs.html
+http://wallaceerick.com.br/hashchange/basic.html#pages/kielbasa.html
+http://wallaceerick.com.br/hashchange/basic.html#pages/ribs.html
+http://wallaceerick.com.br/hashchange/basic.html#pages/steak.html
