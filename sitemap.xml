@@ -10,44 +10,44 @@
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>http://wallaceerick.com.br/hashchange/#!about</loc>
+		<loc>http://wallaceerick.com.br/hashchange/#!html</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://wallaceerick.com.br/hashchange/#!portfolio</loc>
+		<loc>http://wallaceerick.com.br/hashchange/#!css</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://wallaceerick.com.br/hashchange/#!services</loc>
+		<loc>http://wallaceerick.com.br/hashchange/#!php</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://wallaceerick.com.br/hashchange/#!blog</loc>
+		<loc>http://wallaceerick.com.br/hashchange/#!javascript</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://wallaceerick.com.br/hashchange/#!blog/post-1</loc>
+		<loc>http://wallaceerick.com.br/hashchange/#!other</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://wallaceerick.com.br/hashchange/#!blog/post-2</loc>
+		<loc>http://wallaceerick.com.br/hashchange/#!other/jquery</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://wallaceerick.com.br/hashchange/#!contact</loc>
+		<loc>http://wallaceerick.com.br/hashchange/#!other/zepto</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>http://wallaceerick.com.br/hashchange/basic.html</loc>
 		<changefreq>weekly</changefreq>
-		<priority>0.8</priority>
+		<priority>1</priority>
 	</url>
 	<url>
 		<loc>http://wallaceerick.com.br/hashchange/basic.html#pages/steak.html</loc>
