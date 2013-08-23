@@ -30,9 +30,9 @@ a:hover {
 /* Navigation
 /**********************************************/
 
-ul#nav {
-    width: 90%;
+ul#nav { 
     height: 70px;
+    display: table;
     margin: 20px auto;
     padding: 0 20px;
     list-style: none;
@@ -40,16 +40,16 @@ ul#nav {
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
-ul#nav li {
-    display: block;
+ul#nav li { 
     float: left;
 }
 ul#nav li a {
     display: block;
     color: #b6c1c5;
     border-top: 5px solid transparent;
-    padding: 17px 38px 23px;
+    padding: 17px 38px 23px 39px;
     text-decoration: none; 
+    text-align: center;
 }
 ul#nav li a:hover {
     color: #2397cd; 
